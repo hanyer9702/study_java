@@ -30,7 +30,7 @@ public class Test {
 			if(y == 0) {
 				System.out.println("0,0");
 			} else {
-				System.out.println("y축 위");
+				System.out.println("x축 위");
 			}
 		}
 
