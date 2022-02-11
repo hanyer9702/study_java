@@ -36,13 +36,20 @@ public class ConditionLoop {
 //					}
 //				}
 //			switch
-//			
+////				조건에 정수, 문자열 가능
+//				switch case break defaualt break
+		
 //		반복문
 //			for 
-//			
+//				끝을 정해 두고 반복 수행 하는 구문
 //			while : 무한 루프
 //
 //			do-while
+		
+//		참고
+//			break
+//			
+//			continue
 	}
 
 }

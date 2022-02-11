@@ -16,7 +16,7 @@ public class Test {
 			} else if(y < 0) {
 				System.out.println("제 4 사분면");
 			} else {
-				System.out.println("y축 위");
+				System.out.println("범위 외");
 			}
 		} else if (x < 0) {
 			if(y > 0) {
@@ -24,14 +24,10 @@ public class Test {
 			} else if(y < 0) {
 				System.out.println("제 3 사분면");
 			} else {
-				System.out.println("y축 위");
+				System.out.println("범위 외");
 			}
-		} else if (x == 0) {
-			if(y == 0) {
-				System.out.println("0,0");
-			} else {
-				System.out.println("x축 위");
-			}
+		} else{
+			System.out.println("범위 외");
 		}
 
 	}
