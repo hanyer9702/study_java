@@ -6,17 +6,18 @@ public class Function {
 
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
+//		Scanner scan = new Scanner(System.in);
+//		
+//		int num1 = scan.nextInt();
+//		int num2 = scan.nextInt();
+//		
+//		Function function = new Function();
+//		
+//		function.calculator(function, num1, num2);
 		
-		int num1 = scan.nextInt();
-		int num2 = scan.nextInt();
+		String result = addString("고구마와 감자는 ","친구다.");
 		
-		Function function = new Function();
-		
-		function.calculator(function, num1, num2);
-		
-		
-		
+		System.out.println(result);
 	}
 
 //	public 리턴자료형 메소드명 (입력자료형1 입력변수, 입력자료형2 입력변수2, ...) {
@@ -78,5 +79,12 @@ public class Function {
 		System.out.println(a + " * " + b + " = " + mul);
 		System.out.println(a + " / " + b + " = " + div);
 		System.out.println(a + " % " + b + " = " + divN);
+	}
+	
+	public static String addString (String a, String b) {
+		
+		String c = a + b;
+		
+		return c;
 	}
 }
