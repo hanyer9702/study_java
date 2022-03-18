@@ -2,6 +2,7 @@ package com.urdomain.lecture.ch15;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -15,12 +16,12 @@ public class HashMapExample1 {
 		map.put("½Å¿ë±Ç", 85);
 		map.put("È«±æµ¿", 90);
 		map.put("µ¿Àå±º", 80);
-		map.put("È«±æµ¿", 95);
+//		map.put("È«±æµ¿", 95);
 		System.out.println("ÃÑ Entry ¼ö: " + map.size());
 		
 		//°´Ã¼ Ã£±â
-		System.out.println("\tÈ«±æµ¿ : " + map.get("È«±æµ¿"));
-		System.out.println();
+//		System.out.println("\tÈ«±æµ¿ : " + map.get("È«±æµ¿"));
+//		System.out.println();
 		
 		//°´Ã¼¸¦ ÇÏ³ª¾¿ Ã³¸®
 		Set<String> keySet = map.keySet();
@@ -33,8 +34,23 @@ public class HashMapExample1 {
 		System.out.println();
 		
 		//°´Ã¼ »èÁ¦
-		map.remove("È«±æµ¿");
-		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+//		map.remove("È«±æµ¿");
+//		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		
+		Map<String, Integer> map2 = new LinkedHashMap<>();
+		
+		map2.put("½Å¿ë±Ç", 85);
+		map2.put("È«±æµ¿", 90);
+		map2.put("µ¿Àå±º", 80);
+		
+		Set<String> keySet2 = map2.keySet();
+		Iterator<String> keyIterator2 = keySet2.iterator();
+		while(keyIterator2.hasNext()) {
+			String key = keyIterator2.next();
+			Integer value = map2.get(key);
+			System.out.println("\t" + key + " : " + value);
+		}
+		System.out.println();
 	}
 
 }
