@@ -20,6 +20,6 @@ public class parsingItem {
 
 		System.out.println("text1"+text);
 		System.out.println("text2"+text2);
-	} 
+	}
  
 }
