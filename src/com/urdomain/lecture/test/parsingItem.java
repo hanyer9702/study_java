@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class parsingItem {
@@ -13,13 +14,28 @@ public class parsingItem {
 		Document doc = Jsoup.connect(url).get();
 		
 		Elements contents = doc.select(".productByMall_list_seller__2-bzE");
-		Elements contentsName = doc.select(".productByMall_list_seller__2-bzE tbody tr td div a img");
+//		Elements contentsName = doc.select(".productByMall_list_seller__2-bzE tbody tr td div a img");
+		Elements img = doc.getElementsByTag("img"); 
+//		Elements img = img1.select(".productByMall_list_seller__2-bzE");
 		
 		String text = contents.text();
-		String text2 = contentsName.text();
+//		String text2 = contentsName.text();
+		
+		int counter = 0;
+
+        // Loop through img tags
+        for (Element el : img) {
+            // If alt is empty or null, add one to counter
+            if(el.attr("alt") == null || el.attr("alt").equals("")) {
+                counter++;
+            }
+            System.out.println("image tag: " + el.attr("src") + " Alt: " + el.attr("alt"));
+        }
+        System.out.println("Number of unset alt: " + counter);
+
 
 		System.out.println("text1"+text);
-		System.out.println("text2"+text2);
+//		System.out.println("text2"+text2);
 	} 
  
 }
