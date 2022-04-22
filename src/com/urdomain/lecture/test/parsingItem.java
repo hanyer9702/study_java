@@ -32,6 +32,7 @@ public class parsingItem {
             System.out.println("image tag: " + el.attr("src") + " Alt: " + el.attr("alt"));
         }
         System.out.println("Number of unset alt: " + counter);
+        
 
 
 		System.out.println("text1"+text);
