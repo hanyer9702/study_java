@@ -33,8 +33,6 @@ public class parsingItem {
         }
         System.out.println("Number of unset alt: " + counter);
         
-  
-  
 		System.out.println("text1"+text);
 //		System.out.println("text2"+text2);
 	}  
