@@ -21,7 +21,7 @@ public class parsingItem {
 		String text = contents.text();
 //		String text2 = contentsName.text();
 		
-		int counter = 0; 
+		int counter = 0;  
 
         // Loop through img tags
         for (Element el : img) {
