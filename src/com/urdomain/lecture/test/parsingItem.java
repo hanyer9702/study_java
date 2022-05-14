@@ -22,7 +22,7 @@ public class parsingItem {
 //		String text2 = contentsName.text();
 		
 		int counter = 0;  
-
+ 
         // Loop through img tags
         for (Element el : img) {
             // If alt is empty or null, add one to counter
