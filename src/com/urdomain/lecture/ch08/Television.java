@@ -2,17 +2,17 @@ package com.urdomain.lecture.ch08;
 
 public class Television implements RemoteControl{
 
-	//ÇÊµå
+	//í•„ë“œ
 	private int volume;
 
 	@Override
 	public void turnOn() {
-		System.out.println("TV¸¦ ÄÕ´Ï´Ù.");
+		System.out.println("TVë¥¼ ì¼­ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void turnOff() {
-		System.out.println("TV¸¦ ²ü´Ï´Ù.");
+		System.out.println("TVë¥¼ ë•ë‹ˆë‹¤.");
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class Television implements RemoteControl{
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("ÇöÀç Audio º¼·ı: " + volume);
+		System.out.println("í˜„ì¬ Audio ë³¼ë¥¨: " + volume);
 	}
 
 }

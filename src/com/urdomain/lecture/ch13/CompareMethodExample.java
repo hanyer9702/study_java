@@ -3,22 +3,22 @@ package com.urdomain.lecture.ch13;
 public class CompareMethodExample {
 
 	public static void main(String[] args) {
-		Pair<Integer, String> p1 = new Pair<Integer, String>(1, "»ç°ú");
-		Pair<Integer, String> p2 = new Pair<Integer, String>(1, "»ç°ú");
+		Pair<Integer, String> p1 = new Pair<Integer, String>(1, "ì‚¬ê³¼");
+		Pair<Integer, String> p2 = new Pair<Integer, String>(1, "ì‚¬ê³¼");
 		boolean result1 = Util2.<Integer, String>compare(p1, p2);
 		if(result1) {
-			System.out.println("³í¸®ÀûÀ¸·Î µ¿µîÇÑ °´Ã¼ÀÔ´Ï´Ù.");
+			System.out.println("ë…¼ë¦¬ì ìœ¼ë¡œ ë™ë“±í•œ ê°ì²´ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("³í¸®ÀûÀ¸·Î µ¿µîÇÏÁö ¾Ê´Â °´Ã¼ÀÔ´Ï´Ù.");
+			System.out.println("ë…¼ë¦¬ì ìœ¼ë¡œ ë™ë“±í•˜ì§€ ì•ŠëŠ” ê°ì²´ì…ë‹ˆë‹¤.");
 		}
-		
-		Pair<String, String> p3 = new Pair<String, String>("user1", "°í±¸¸¶");
-		Pair<String, String> p4 = new Pair<String, String>("user2", "°¨ÀÚ");
+
+		Pair<String, String> p3 = new Pair<String, String>("user1", "ê³ êµ¬ë§ˆ");
+		Pair<String, String> p4 = new Pair<String, String>("user2", "ê°ì");
 		boolean result2 = Util2.compare(p3, p4);
 		if(result2) {
-			System.out.println("³í¸®ÀûÀ¸·Î µ¿µîÇÑ °´Ã¼ÀÔ´Ï´Ù.");
+			System.out.println("ë…¼ë¦¬ì ìœ¼ë¡œ ë™ë“±í•œ ê°ì²´ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println("³í¸®ÀûÀ¸·Î µ¿µîÇÏÁö ¾Ê´Â °´Ã¼ÀÔ´Ï´Ù.");
+			System.out.println("ë…¼ë¦¬ì ìœ¼ë¡œ ë™ë“±í•˜ì§€ ì•ŠëŠ” ê°ì²´ì…ë‹ˆë‹¤.");
 		}
 	}
 

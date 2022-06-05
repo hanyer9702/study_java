@@ -10,20 +10,20 @@ public class SupersonicAirplane extends Airplane{
 //	@Override
 //	public void fly() {
 //		if(flyMode == SUPERSONIC) {
-//			System.out.println("ÃÊÀ½¼ÓºñÇàÇÕ´Ï´Ù.");
+//			System.out.println("ì´ˆìŒì†ë¹„í–‰í•©ë‹ˆë‹¤.");
 //		}else {
 //			super.fly();
 //		}
 //	}
-	
-//	»ó¼öÆÄÀÏ »ı¼º ÈÄ ÄÚµå
-	
+
+//	ìƒìˆ˜íŒŒì¼ ìƒì„± í›„ ì½”ë“œ
+
 	public int flyMode = Constants.NORMAL;
-	
+
 	@Override
 	public void fly() {
 		if(flyMode == Constants.SUPERSONIC) {
-			System.out.println("ÃÊÀ½¼ÓºñÇàÇÕ´Ï´Ù.");
+			System.out.println("ì´ˆìŒì†ë¹„í–‰í•©ë‹ˆë‹¤.");
 		}else {
 			super.fly();
 		}

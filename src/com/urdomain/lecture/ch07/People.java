@@ -5,7 +5,7 @@ public class People {
 	public String name;
 	public String ssn;
 	
-	// ºÎ¸ğ¿¡ »ı¼ºÀÚ°¡ Á¸ÀçÇÑ´Ù.
+	// ë¶€ëª¨ì— ìƒì„±ìê°€ ì¡´ì¬í•œë‹¤.
 	public People(String name, String ssn) {
 		this.name = name;
 		this.ssn = ssn;

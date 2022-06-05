@@ -5,12 +5,12 @@ public class BoxExample {
 	public static void main(String[] args) {
 
 		Box<String> box = new Box<String>();
-		// Box °´Ã¼ Áß¿¡¼­ ÇÑ°³ Áï Á¦³×¸¯ Å¸ÀÔÀº String À¸·Î µÈ °ÍÀÌ´Ù.
+		// Box ê°ì²´ ì¤‘ì—ì„œ í•œê°œ ì¦‰ ì œë„¤ë¦­ íƒ€ì…ì€ String ìœ¼ë¡œ ëœ ê²ƒì´ë‹¤.
 		// String t;
 		box.set("kate");
 		String str = box.get();
 		System.out.println("str: " + str);
-		
+
 		Box<Integer> box2 = new Box<Integer>();
 		// t : Integer t;
 		box2.set(11);

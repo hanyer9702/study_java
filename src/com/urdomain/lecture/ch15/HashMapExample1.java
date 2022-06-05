@@ -9,21 +9,21 @@ import java.util.Set;
 public class HashMapExample1 {
 
 	public static void main(String[] args) {
-		//Map ÄÃ·º¼Ç »ı¼º
+		//Map ì»¬ë ‰ì…˜ ìƒì„±
 		Map<String, Integer> map = new HashMap<String, Integer>();
 		
-		//°´Ã¼ ÀúÀå
-		map.put("½Å¿ë±Ç", 85);
-		map.put("È«±æµ¿", 90);
-		map.put("µ¿Àå±º", 80);
-//		map.put("È«±æµ¿", 95);
-		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		//ê°ì²´ ì €ì¥
+		map.put("ì‹ ìš©ê¶Œ", 85);
+		map.put("í™ê¸¸ë™", 90);
+		map.put("ë™ì¥êµ°", 80);
+//		map.put("í™ê¸¸ë™", 95);
+		System.out.println("ì´ Entry ìˆ˜: " + map.size());
 		
-		//°´Ã¼ Ã£±â
-//		System.out.println("\tÈ«±æµ¿ : " + map.get("È«±æµ¿"));
+		//ê°ì²´ ì°¾ê¸°
+//		System.out.println("\tí™ê¸¸ë™ : " + map.get("í™ê¸¸ë™"));
 //		System.out.println();
 		
-		//°´Ã¼¸¦ ÇÏ³ª¾¿ Ã³¸®
+		//ê°ì²´ë¥¼ í•˜ë‚˜ì”© ì²˜ë¦¬
 		Set<String> keySet = map.keySet();
 		Iterator<String> keyIterator = keySet.iterator();
 		while(keyIterator.hasNext()) {
@@ -33,15 +33,15 @@ public class HashMapExample1 {
 		}
 		System.out.println();
 		
-		//°´Ã¼ »èÁ¦
-//		map.remove("È«±æµ¿");
-//		System.out.println("ÃÑ Entry ¼ö: " + map.size());
+		//ê°ì²´ ì‚­ì œ
+//		map.remove("í™ê¸¸ë™");
+//		System.out.println("ì´ Entry ìˆ˜: " + map.size());
 		
 		Map<String, Integer> map2 = new LinkedHashMap<>();
 		
-		map2.put("½Å¿ë±Ç", 85);
-		map2.put("È«±æµ¿", 90);
-		map2.put("µ¿Àå±º", 80);
+		map2.put("ì‹ ìš©ê¶Œ", 85);
+		map2.put("í™ê¸¸ë™", 90);
+		map2.put("ë™ì¥êµ°", 80);
 		
 		Set<String> keySet2 = map2.keySet();
 		Iterator<String> keyIterator2 = keySet2.iterator();

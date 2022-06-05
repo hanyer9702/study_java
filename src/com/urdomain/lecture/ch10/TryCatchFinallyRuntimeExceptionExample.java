@@ -3,30 +3,30 @@ package com.urdomain.lecture.ch10;
 public class TryCatchFinallyRuntimeExceptionExample {
 
 	public static void main(String[] args) {
-//		»çÀü Á¶Ä¡°¡ ´õ Áß¿äÇÑ °Í °°´Ù.
-		
+//		ì‚¬ì „ ì¡°ì¹˜ê°€ ë” ì¤‘ìš”í•œ ê²ƒ ê°™ë‹¤.
+
 		String data1 = null;
 		String data2 = null;
-		
+
 		try {
 			data1 = args[0];
 			data2 = args[1];
-		} catch(ArrayIndexOutOfBoundsException e) {	// ¿¹¿Ü´Â °æÇèÀûÀ¸·Î ÀÛ¼ºÀ» ÇÏ´Â ºÎºĞÀÌ ÀÖ°í ¸ğÈ£ÇÏ¸é Exception »ç¿ë
-			System.out.println("½ÇÇà ¸Å°³°ªÀÇ ¼ö°¡ ºÎÁ·ÇÕ´Ï´Ù.");
-			System.out.println("[½ÇÇà ¹æ¹ı]");
+		} catch(ArrayIndexOutOfBoundsException e) {	// ì˜ˆì™¸ëŠ” ê²½í—˜ì ìœ¼ë¡œ ì‘ì„±ì„ í•˜ëŠ” ë¶€ë¶„ì´ ìˆê³  ëª¨í˜¸í•˜ë©´ Exception ì‚¬ìš©
+			System.out.println("ì‹¤í–‰ ë§¤ê°œê°’ì˜ ìˆ˜ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+			System.out.println("[ì‹¤í–‰ ë°©ë²•]");
 			System.out.println("java TryCatchFinallyRuntimeExceptionExample num1 num2");
 			return;
 		} 
-		
+
 		try {
 			int value1 = Integer.parseInt(data1);
 			int value2 = Integer.parseInt(data2);
 			int result = value1 + value2;
 			System.out.println(data1 + "+" + data2 + "=" + result);
-		} catch(NumberFormatException e) {	// ¿¹¿Ü´Â °æÇèÀûÀ¸·Î ÀÛ¼ºÀ» ÇÏ´Â ºÎºĞÀÌ ÀÖ°í ¸ğÈ£ÇÏ¸é Exception »ç¿ë
-			System.out.println("¼ıÀÚ·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+		} catch(NumberFormatException e) {	// ì˜ˆì™¸ëŠ” ê²½í—˜ì ìœ¼ë¡œ ì‘ì„±ì„ í•˜ëŠ” ë¶€ë¶„ì´ ìˆê³  ëª¨í˜¸í•˜ë©´ Exception ì‚¬ìš©
+			System.out.println("ìˆ«ìë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		} finally {
-			System.out.println("´Ù½Ã ½ÇÇàÇÏ¼¼¿ä.");
+			System.out.println("ë‹¤ì‹œ ì‹¤í–‰í•˜ì„¸ìš”.");
 		}
 	}
 

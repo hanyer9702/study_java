@@ -1,18 +1,18 @@
 package com.urdomain.lecture.ch08;
 
 public class Audio implements RemoteControl {
-	
-	//ÇÊµå
+
+	//í•„ë“œ
 	private int volume;
 
 	@Override
 	public void turnOn() {
-		System.out.println("Audio¸¦ ÄÕ´Ï´Ù.");
+		System.out.println("Audioë¥¼ ì¼­ë‹ˆë‹¤.");
 	}
 
 	@Override
 	public void turnOff() {
-		System.out.println("Audio¸¦ ²ü´Ï´Ù.");
+		System.out.println("Audioë¥¼ ë•ë‹ˆë‹¤.");
 	}
 
 	@Override
@@ -24,7 +24,7 @@ public class Audio implements RemoteControl {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("ÇöÀç Audio º¼·ı: " + volume);
+		System.out.println("í˜„ì¬ Audio ë³¼ë¥¨: " + volume);
 	}
 
 }

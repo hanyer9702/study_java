@@ -2,7 +2,7 @@ package com.urdomain.lecture.ch13;
 
 public class Box<T> {
 
-	private T t;	// Áö±İ µ¥Ÿæ Å¸ÀÔ Á¤ÇÏÁö ¾Ê°í ³ªÁß¿¡ »ç¿ëÇÒ¶§ Á¤ÇÔ.
+	private T t;	// ì§€ê¸ˆ ë°ÂŸì´í„° íƒ€ì… ì •í•˜ì§€ ì•Šê³  ë‚˜ì¤‘ì— ì‚¬ìš©í• ë•Œ ì •í•¨.
 
 	public T get() {
 		return t;
@@ -11,6 +11,6 @@ public class Box<T> {
 	public void set(T t) {
 		this.t = t;
 	}
-	
-	
+
+
 }

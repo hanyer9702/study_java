@@ -6,7 +6,7 @@ public class ThrowsExample {
 		try {
 			findClass();
 		} catch(ClassNotFoundException e) {
-			System.out.println("Å¬·¡½º°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("í´ë˜ìŠ¤ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 	}
 

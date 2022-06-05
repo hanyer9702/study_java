@@ -6,7 +6,7 @@ import java.util.List;
 public class ArraysAsListExample {
 
 	public static void main(String[] args) {
-		List<String> list1 = Arrays.asList("°í±¸¸¶","°¨ÀÚ","Åä¸¶Åä");
+		List<String> list1 = Arrays.asList("í™ê¸¸ë™","ì‹ ìš©ê¶Œ","ê°ìë°”");
 		for(String name: list1) {
 			System.out.println(name);
 		}

@@ -2,14 +2,14 @@ package com.urdomain.lecture.ch07;
 
 public class Cat extends Animal{
 	
-	//»ı¼ºÀÚ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public Cat() {
-		this.kind = "Æ÷À¯·ù";
+		this.kind = "ê³ ì–‘ì´";
 	}
 	
 	@Override
 	public void sound() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 	}
 
 }

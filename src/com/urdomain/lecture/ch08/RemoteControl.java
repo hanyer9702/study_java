@@ -2,26 +2,26 @@ package com.urdomain.lecture.ch08;
 
 public interface RemoteControl {
 
-	//»ó¼ö
-	int MAX_VOLUME = 10;			//public static final »ı·«µÇ¾î ÀÖÀ½
+	//ìƒìˆ˜
+	int MAX_VOLUME = 10;			//public static final ìƒëµë˜ì–´ ìˆìŒ
 	int MIN_VOLUME = 0;
-	
-	//Ãß»ó ¸Ş¼Òµå : ±¸Çö Å¬·¡½º¿¡¼­ ¹«Á¶°Ç ¿À¹ö¶óÀÌµå ÇØ¾ß µÈ´Ù.
+
+	//ì¶”ìƒ ë©”ì†Œë“œ : êµ¬í˜„ í´ë˜ìŠ¤ì—ì„œ ë¬´ì¡°ê±´ ì˜¤ë²„ë¼ì´ë“œ í•´ì•¼ ëœë‹¤.
 	void turnOn();					// public abstract
 	void turnOff();
 	void setVolume(int volume);
-	
-	//µğÆúÆ® ¸Ş¼Òµå : public »ı·« °¡´É
+
+	//ë””í´íŠ¸ ë©”ì†Œë“œ : public ìƒëµ ê°€ëŠ¥
 	default void setMute(boolean mute) {
 		if(mute) {
-			System.out.println("¹«À½ Ã³¸®ÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ìŒ ì²˜ë¦¬í•©ë‹ˆë‹¤.");
 		} else {
-			System.out.println("¹«À½ ÇØÁ¦ÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ìŒ í•´ì œí•©ë‹ˆë‹¤.");
 		}
 	}
-	
-	//Á¤Àû ¸Ş¼Òµå : public »ı·« °¡´É
+
+	//ì •ì  ë©”ì†Œë“œ : public ìƒëµ ê°€ëŠ¥
 	static void changeBattery() {
-		System.out.println("°ÇÀüÁö¸¦ ±³È¯ÇÕ´Ï´Ù.");
+		System.out.println("ê±´ì „ì§€ë¥¼ êµí™˜í•©ë‹ˆë‹¤.");
 	}
 }

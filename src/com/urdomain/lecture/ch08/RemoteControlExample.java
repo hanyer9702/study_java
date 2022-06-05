@@ -6,23 +6,23 @@ public class RemoteControlExample {
 
 //		Audio audio = new Audio();
 		Television television = new Television();
-		
+
 //		audio.turnOn();
 //		audio.turnOff();
 		television.turnOn();
 		television.turnOff();
-		
+
 		System.out.println();
-		
-//		ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÑ Å¬·¡½º´Â À§¿¡ Ã³·³ ÀÏ¹İÅ¬·¡½º °´Ã¼ ¸¸µéµíÀÌ ÇÏ¸é ¾ÈµÈ´Ù.
-		
-////		ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÇÑ Å¬·¡½º¸¦ »ç¿ëÇØ¾ß µÈ´Ù. ÇÒ¶§´Â
-//		RemoteControl remoteControl;	// ÀÎÅÍÆäÀÌ½º º¯¼ö ¼±¾ğ
-//		remoteControl = new Audio();	// ±¸Çö°´Ã¼·Î ÃÊ±âÈ­
-		
+
+//		ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í•œ í´ë˜ìŠ¤ëŠ” ìœ„ì— ì²˜ëŸ¼ ì¼ë°˜í´ë˜ìŠ¤ ê°ì²´ ë§Œë“¤ë“¯ì´ í•˜ë©´ ì•ˆëœë‹¤.
+
+////		ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í•œ í´ë˜ìŠ¤ë¥¼ ì‚¬ìš©í•´ì•¼ ëœë‹¤. í• ë•ŒëŠ”
+//		RemoteControl remoteControl;	// ì¸í„°í˜ì´ìŠ¤ ë³€ìˆ˜ ì„ ì–¸
+//		remoteControl = new Audio();	// êµ¬í˜„ê°ì²´ë¡œ ì´ˆê¸°í™”
+
 //		RemoteControl remoteControl = new Audio();
 		RemoteControl remoteControl = new Television();
-		
+
 		remoteControl.turnOn();
 		remoteControl.turnOff();
 	}

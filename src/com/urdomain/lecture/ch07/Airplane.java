@@ -3,14 +3,14 @@ package com.urdomain.lecture.ch07;
 public class Airplane {
 
 	public void land() {
-		System.out.println("Âø·úÇÕ´Ï´Ù.");
+		System.out.println("ì°©ë¥™í•©ë‹ˆë‹¤.");
 	}
 	
 	public void fly() {
-		System.out.println("³¯¶ó°©´Ï´Ù.");
+		System.out.println("ë‚ ë¼ê°‘ë‹ˆë‹¤.");
 	}
 	
 	public void takeOff() {
-		System.out.println("ÀÌ·úÇÕ´Ï´Ù.");
+		System.out.println("ì´ë¥™í•©ë‹ˆë‹¤.");
 	}
 }

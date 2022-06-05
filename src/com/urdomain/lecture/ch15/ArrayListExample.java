@@ -15,7 +15,7 @@ public class ArrayListExample {
 		list.add("iBATIS");
 		
 		int size = list.size();
-		System.out.println("ÃÑ °´Ã¼¼ö: " + size);
+		System.out.println("ì´ ê°ì²´ìˆ˜: " + size);
 		System.out.println();
 		
 		String skill = list.get(2);

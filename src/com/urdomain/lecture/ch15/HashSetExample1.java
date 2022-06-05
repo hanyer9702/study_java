@@ -16,7 +16,7 @@ public class HashSetExample1 {
 		set.add("iBATIS");
 		
 		int size = set.size();
-		System.out.println("ÃÑ °´Ã¼¼ö: " + size);
+		System.out.println("ì´ ê°ì²´ìˆ˜: " + size);
 		
 		Iterator<String> iterator = set.iterator();
 		while(iterator.hasNext()) {
@@ -27,14 +27,14 @@ public class HashSetExample1 {
 		set.remove("JDBC");
 		set.remove("iBATIS");
 		
-		System.out.println("ÃÑ °´Ã¼¼ö: " + set.size());
+		System.out.println("ì´ ê°ì²´ìˆ˜: " + set.size());
 		
 		for(String element : set) {
 			System.out.println("\t" + element);
 		}
 		
 		set.clear();
-		if(set.isEmpty()) {System.out.println("ºñ¾î ÀÖÀ½");}
+		if(set.isEmpty()) {System.out.println("ë¹„ì–´ ìˆìŒ");}
 	}
 
 }
