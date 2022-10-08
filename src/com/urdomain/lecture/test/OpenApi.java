@@ -27,7 +27,7 @@ public class OpenApi {
         // 5. 통신을 위한 메소드 SET.
         conn.setRequestMethod("GET");
         // 6. 통신을 위한 Content-type SET. 
-        conn.setRequestProperty("Content-type", "application/json");
+        conn.setRequestProperty("Content-type", "application/xml");
         // 7. 통신 응답 코드 확인.
         System.out.println("Response code: " + conn.getResponseCode());
         // 8. 전달받은 데이터를 BufferedReader 객체로 저장.
